@@ -9,7 +9,7 @@ ordered in alphabetical order"""
 # --------------------------
 
 
-def consec(phrase, min_length=3):
+def isTripleConsecutive(phrase, min_length=3):
     """This function takes in the inputted word or
     phrase and checks if 3 of the letters are consecutive"""
 
@@ -41,7 +41,7 @@ testword = input("Please enter a word: ")
 
 # Call the function to check if letters are
 # consecutive and print out the return statement it gives
-print(consec(testword))
+print(isTripleConsecutive(testword))
 
 # Thoughts: The 'ord' function is incredibly useful
 # for this kind of program, as it has built in the
