@@ -35,7 +35,7 @@ def getInput():
 #Start of the main part of the function, calls to get user inputs
 getInput()
 
-#Cakculates the max height
+#Cakculates the maximum height
 maxHeight = height + (velocity * (velocity/32)) - (16 * ((velocity/32) ** 2))
 
 #Calculates the amount of time that the ball takes until it hits the ground
