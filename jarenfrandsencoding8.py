@@ -6,7 +6,7 @@ def state_and_capitol():
     """This function checks if the first letter of the state and capitol city are
     the same letter, and if they are, prints them out."""
 
-    infile = open("statesANC.txt", encoding="utf-8")
+    infile = open("StatesANC.txt", encoding="utf-8")
 
     # Checks each line and gets the state's first letter, while putting all of the info into a list
     for line in infile:
@@ -19,6 +19,24 @@ def state_and_capitol():
             print((data[3].rstrip()) + ", ", data[0])
 
     infile.close()
+
+
+def state_check():
+    """This function asks the user to input a state and will then output all
+    of the information for that state"""
+
+    infile = open("statesANC.txt", encoding="utf-8")
+    # Asks the user for the name of a state
+    state = input("Please enter the name of a state: ")
+
+    for line in infile:
+        data = line.split(",")
+
+        # Checks each line in the file to see if the user input matches one of the state names
+        # If it does, print out all information for that state.
+        if data[0] == state:
+            print((data[0].rstrip()) + ", " + (data[1].rstrip()) + ", " +
+                  (data[2].rstrip()) + ", " + (data[3].rstrip()))
 
 
 def state_and_slogan():
@@ -45,3 +63,6 @@ state_and_capitol()
 
 print("\nCheck for state and slogan:")
 state_and_slogan()
+
+print()
+state_check()
