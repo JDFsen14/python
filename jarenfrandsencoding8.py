@@ -35,8 +35,9 @@ def state_check():
         # Checks each line in the file to see if the user input matches one of the state names
         # If it does, print out all information for that state.
         if data[0] == state:
-            print((data[0].rstrip()) + ", " + (data[1].rstrip()) + ", " +
-                  (data[2].rstrip()) + ", " + (data[3].rstrip()))
+            #print((data[0].rstrip()) + ", " + (data[1].rstrip()) + ", " +
+            #      (data[2].rstrip()) + ", " + (data[3].rstrip()))
+            print(data)
 
 
 def state_and_slogan():
